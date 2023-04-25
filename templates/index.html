@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{Email Title}</title>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'PT Sans', sans-serif;
+        background-color: #ffffff;
+      }
+
+      .container {
+        width: 80vw;
+        max-width: 814px;
+        height: 100%;
+        margin-inline: auto;
+      }
+
+      .logo {
+        padding-block: 3em;
+      }
+
+      .logo img {
+        width: 12.5rem;
+        height: 3.75rem;
+      }
+
+      .title {
+        width: 100%;
+        padding-block: 0.625rem;
+      }
+
+      .title h3 {
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: #000;
+        line-height: 1.8rem;
+      }
+
+      .content {
+        width: 80vw;
+        max-width: 32.56rem;
+        height: 100%;
+        font-size: 0.875rem;
+        line-height: 1.05rem;
+      }
+
+      .content p {
+        text-align: justify;
+        font-size: 0.75rem;
+      }
+
+      .content h4 {
+        font-size: 0.875rem;
+        font-weight: 500;
+        color: #000;
+        margin-bottom: 20px;
+      }
+
+      .auth {
+        font-size: 0.875rem;
+        font-weight: 600;
+        line-height: 1rem;
+        color: #000;
+        margin-block: 2.5rem;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        margin-top: 4rem;
+      }
+
+      .btn {
+        width: 32.56rem;
+        /* max-width:  */
+        height: 3.125rem;
+        padding: 0.5em 6em;
+        background-color: #0f62fe;
+        font-size: 1rem;
+        font-weight: 500;
+        border: none;
+        border-radius: 0.2125rem;
+        cursor: pointer;
+      }
+
+      .greetings {
+        width: 100%;
+        max-width: 32.56rem;
+        height: 100%;
+        font-size: 0.875rem;
+        line-height: 1.05rem;
+        margin-top: 3rem;
+      }
+      .footer {
+        width: 100%;
+        max-width: 32.56rem;
+        height: 100%;
+        font-size: 0.75rem;
+        line-height: 1.05rem;
+        padding-block: 2.06em;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div class="logo">
+        <img
+          src="http://argue.synercomgroup.net/static/media/AIB%20logo.96ed4ef1c9306279d0bad7edc16fd351.svg"
+          alt="AIB logo"
+        />
+      </div>
+      <div class="title">
+        <h3>[Occurrence Description]</h3>
+      </div>
+      <div class="content">
+        <h4>Dear [Stakeholder Name],</h4>
+
+        <p>
+          I am writing to inform you of an occurrence that took place within our
+          organization that may be of concern to you as a stakeholder.
+        </p>
+        <p>
+          The occurrence in question is
+          <span class="auth">[briefly describe the occurrence].</span> This
+          event took place on <span class="auth">[date]</span> at
+          <span class="auth">[time]</span> and involved
+          <span class="auth">[briefly describe who was involved].</span>
+        </p>
+        <p>
+          We understand that this occurrence may have an impact on you as a
+          stakeholder and we want to assure you that we are taking immediate
+          action to address the situation. Our team is currently conducting an
+          investigation to determine the cause of the occurrence and to identify
+          any potential risks to our stakeholders.
+        </p>
+        <p>
+          In the meantime, we have implemented measures to mitigate any
+          potential negative impact on our stakeholders. These measures include
+          <span class="auth"
+            >[list any actions taken to mitigate the impact].</span
+          >
+        </p>
+        <p>
+          We will keep you informed of any further developments and we will
+          provide you with a detailed report of our findings once the
+          investigation is complete.
+        </p>
+        <p>
+          If you have any questions or concerns, please do not hesitate to
+          contact me. We appreciate your continued support and understanding
+          during this difficult time.
+        </p>
+        <br />
+
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn"
+          >View Occurence</a
+        >
+      </div>
+
+      <div class="greetings">
+        <p>Best Regards,</p>
+        <h4>AIB</h4>
+      </div>
+
+      <div class="footer">
+        <p>&copy; <span id="dt"></span> Argue. All rights reserved. <br /></p>
+        <img
+          src="http://argue.synercomgroup.net/static/media/Argue%20-%20Full-Blue.d4bdf6e10b6284b9e62eaf58e058d431.svg"
+          alt="argue logo"
+        />
+      </div>
+    </main>
+
+    <script>
+      var date = new Date().toLocaleDateString()
+      document.getElementById('dt').innerHTML = date
+    </script>
+  </body>
+</html>

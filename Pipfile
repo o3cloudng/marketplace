@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "4.1.5"
+celery = "4.4.1"
+redis = "3.4.1"
+psycopg2-binary = "2.9.5"
+djangorestframework = "*"
+pillow = "*"
+djangorestframework-simplejwt = "*"
+python-decouple = "*"
+django-filter = "*"
+django-rest-passwordreset = "*"
+drf-yasg = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10.6"
