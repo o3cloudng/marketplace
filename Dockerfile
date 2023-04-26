@@ -21,9 +21,9 @@ RUN pip install --upgrade pip
 
 RUN pip install pipenv 
 
-RUN pipenv --version
+# RUN pipenv --version
 
-RUN pipenv lock
+# RUN pipenv lock --pre
 
 # install our dependencies
 # we use --system flag because we don't need an extra virtualenv
