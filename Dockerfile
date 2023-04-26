@@ -27,7 +27,7 @@ RUN pip install pipenv
 
 # install our dependencies
 # we use --system flag because we don't need an extra virtualenv
-RUN pipenv install --system --deploy
+RUN pipenv install --system
 
 # copy our project code
 COPY . /usr/src/app
