@@ -23,7 +23,7 @@ RUN pip install pipenv
 
 # RUN pipenv --version
 
-# RUN pipenv lock --pre
+RUN pipenv lock --pre
 
 # install our dependencies
 # we use --system flag because we don't need an extra virtualenv
